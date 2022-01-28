@@ -11,6 +11,9 @@ const LogoBox = styled.span`
   height: 30px;
   line-height: 20px;
   padding: 10px;
+  img {
+    transition: 200ms ease;
+  }
 
   &:hover img {
     transform: rotate(20deg);
@@ -18,22 +21,22 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-  const footPrintImg = `/images/footprint%{useColorModeValue(''. '-dark')}.png`
+  const footPrintImg = `/images/react-logo${useColorModeValue('', '-dark')}.png`
 
   return (
     <Link href="/">
       <a>
         <LogoBox>
           <Image src={footPrintImg} width={20} height={20} alt="Logo" />
+          <Text
+            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+            fontFamily="M PLUS Rounded 1c"
+            fontWeight="bold"
+            ml={3}
+          >
+            Pedro Maironi Toribio
+          </Text>
         </LogoBox>
-        <Text
-          color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-          fontFamily="M PLUS Rounded 1c"
-          fontWeight="bold"
-          ml={3}
-        >
-          Pedro Maironi Toribio
-        </Text>
       </a>
     </Link>
   )

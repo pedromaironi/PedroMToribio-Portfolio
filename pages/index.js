@@ -1,4 +1,5 @@
 import { Container, Box, Heading } from '@chakra-ui/react'
+import Logo from '../components/logo'
 
 const Page = () => {
   return (
