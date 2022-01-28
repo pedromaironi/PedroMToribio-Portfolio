@@ -4,7 +4,15 @@ import Logo from '../components/logo'
 const Page = () => {
   return (
     <Container>
-      <Box borderRadius="lg" bg="red" align="center" p={3}>
+      <Box
+        borderRadius="lg"
+        bg="red"
+        align="center"
+        p={3}
+        text-align="center"
+        mb={3}
+        mt={1}
+      >
         Hello, I&apos;m a front-end developer based in Republica Dominicana!
       </Box>
 
