@@ -35,7 +35,6 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
     </NextLink>
   )
 }
-
 const Navbar = props => {
   const { path } = props
 
