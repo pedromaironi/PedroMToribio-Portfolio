@@ -22,7 +22,7 @@ const LogoBox = styled.span`
 
 const Logo = () => {
   // const footPrintImg = `/images/react-logo${useColorModeValue('', '-dark')}.png`
-  const footPrintImg = `/images/react-logo${useColorModeValue('-dark', '')}.png`
+  const footPrintImg = `/images/react-logo${useColorModeValue('', '-dark')}.png`
 
   return (
     <Link href="/">
